@@ -1,4 +1,4 @@
-const Promise = function (execute) {
+const Promise = function Promise(execute) {
   const self = this;
   this.status = 'pending';
   this.value = null;
@@ -21,7 +21,7 @@ const Promise = function (execute) {
   }
 };
 
-Promise.prototype.then = function (onFullfilled, onRejected) {
+Promise.prototype.then = function then(onFullfilled, onRejected) {
   if (this.status === 'pending') {
     console.log('pending');
   } else if (this.status === 'resolved') {
